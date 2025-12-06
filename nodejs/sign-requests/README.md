@@ -65,6 +65,22 @@ e.g.
 node main.js GET /v0/index
 ```
 
+To run a POST, PUT, PATCH or DELETE command, add the endpoint and the body of the request to a JSON file: e.g.
+
+```json
+{
+  "endpoint": "/v0/legal-persons/{legal-person-id}",
+  "body": {
+    "display-name": "{display-name}"
+  }
+}```
+
+Save this text to a file (e.g. `update_legal_person.json`) in the `.gitignore`d `commands` folder, and execute the command by referencing the filename: e.g.
+
+```bash
+node main.js POST update_legal_person.json
+```
+
 This will:
 1. Load your Ed25519 private key
 2. Create and sign a request to Griffin's message signature verification endpoint
