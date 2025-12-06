@@ -73,7 +73,8 @@ To run a POST, PUT, PATCH or DELETE command, add the endpoint and the body of th
   "body": {
     "display-name": "{display-name}"
   }
-}```
+}
+```
 
 Save this text to a file (e.g. `update_legal_person.json`) in the `.gitignore`d `commands` folder, and execute the command by referencing the filename: e.g.
 
