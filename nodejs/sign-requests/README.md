@@ -26,7 +26,6 @@ Follow our [documentation](https://docs.griffin.com/docs/guides/how-to-create-me
 
 ## Setup
 
-
 1. Set the required environment variables:
 
 ```bash

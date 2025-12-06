@@ -36,6 +36,7 @@ This repository contains example implementations in various programming language
 
 - [Python](./python/) - Using the `http-message-signatures` library
 - [Golang](./golang/) - Using [github.com/yaronf/httpsign](https://github.com/yaronf/httpsign)
+- [NodeJS](./nodejs/) - Using the built-in `crypto` module
 
 
 ## Resources
