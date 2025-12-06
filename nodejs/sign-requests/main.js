@@ -121,7 +121,7 @@ if (!apiKey) {
 
 const keyId = process.env.GRIFFIN_KEY_ID;
 if (!keyId) {
-  console.log('Please set the GRIFFIN_API_KEY environment variable');
+  console.log('Please set the GRIFFIN_KEY_ID environment variable');
   process.exit(1);
 }
 
