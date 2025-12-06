@@ -1,0 +1,7 @@
+{
+  "endpoint": "/v0/legal-persons/{legalPersonId}/claims",
+  "body": {
+    "tins-by-country": { "DE" : ["1234 5678 901"], "US" : ["123-45-6789", "12-3456789"] },
+    "claim-type": "tax-identification-numbers-by-country"
+  }
+}

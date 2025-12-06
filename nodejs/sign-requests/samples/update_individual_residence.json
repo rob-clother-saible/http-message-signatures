@@ -1,0 +1,12 @@
+{
+  "endpoint": "/v0/legal-persons/{legalPersonId}/claims",
+  "body": {
+    "building-name": "{buildingName (optional)}",
+    "building-number": "{buildingNumber (optional)}",
+    "street-name": "{streetName}",
+    "city": "{city}",
+    "postal-code": "{postCode}",
+    "country-code": "{GB | IM | GG | JE}",
+    "claim-type": "individual-residence"
+  }
+}

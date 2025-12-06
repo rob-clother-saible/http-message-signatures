@@ -1,0 +1,8 @@
+{
+  "endpoint": "/v0/organizations/{organization-id}/bank/accounts",
+  "body": {
+    "owner-url": "/v0/legal-persons/{legalPersonId}",
+    "display-name": "{display-name}",
+    "bank-product-type": "embedded-account"
+  }
+}

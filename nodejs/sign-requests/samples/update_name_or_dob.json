@@ -1,0 +1,10 @@
+{
+  "endpoint": "/legal-persons/{legalPersonId}/claims",
+  "body": {
+    "date-of-birth": "{yyyy-MM-dd}",
+    "given-name": "{givenName}",
+    "surname": "{surname}",
+    "middle-name": "{middleName (optional)}",
+    "claim-type": "individual-identity"
+  }
+}

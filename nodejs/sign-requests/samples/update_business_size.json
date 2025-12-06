@@ -1,0 +1,7 @@
+{
+  "endpoint": "/v0/legal-persons/{legalPersonId}/claims",
+  "body": {
+    "business-size": "{small | micro | large | medium}",
+    "claim-type": "business-size"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "endpoint": "/v0/legal-persons/{legalPersonId}/claims",
+  "body": {
+    "number-of-employees": 10,
+    "claim-type": "number-of-employees"
+  }
+}

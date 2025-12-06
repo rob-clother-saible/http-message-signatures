@@ -1,0 +1,6 @@
+{
+  "endpoint": "/v0/legal-persons/{legal-person-id}",
+  "body": {
+    "display-name": "{display-name}"
+  }
+}

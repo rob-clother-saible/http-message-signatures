@@ -1,0 +1,6 @@
+{
+  "endpoint": "/v0/legal-persons/{legalPersonId}/verifications",
+  "body": {
+    "workflow-url": "/v0/workflows/{workflowId}"
+  }
+}

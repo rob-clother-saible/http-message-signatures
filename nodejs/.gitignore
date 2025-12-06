@@ -1,0 +1,10 @@
+# Griffin payloads
+commands/
+
+# API Keys and Signing Keys
+private_key.pem
+
+# NodeJS
+node_modules/
+
+.env

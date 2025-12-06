@@ -1,0 +1,4 @@
+{
+  "endpoint": "/v0/webhooks/{webhookId}/actions/test",
+  "body": {}
+}

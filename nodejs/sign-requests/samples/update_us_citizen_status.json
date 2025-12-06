@@ -1,0 +1,7 @@
+{
+  "endpoint": "/v0/legal-persons/{legalPersonId}/claims",
+  "body": {
+    "us-citizen": false,
+    "claim-type": "us-citizen"
+  }
+}
