@@ -2,7 +2,7 @@
   "name": "griffin_api",
   "type": "module",
   "version": "1.0.0",
-  "description": "Griffin API Update Tool",
+  "description": "Griffin Request Verification Demo",
   "main": "main.js",
   "directories": {
     "lib": "lib"
@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "uuid": "^13.0.0"
   }
 }

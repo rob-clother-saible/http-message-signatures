@@ -2,7 +2,7 @@
   "name": "griffin_api",
   "type": "module",
   "version": "1.0.0",
-  "description": "Griffin API Update Tool",
+  "description": "Griffin Request Signing Demo",
   "main": "main.js",
   "directories": {
     "lib": "lib"
@@ -14,6 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^3.3.2",
-    "uuid": "^11.1.0"
+    "uuid": "^13.0.0"
   }
 }
