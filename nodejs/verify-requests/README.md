@@ -30,6 +30,7 @@ Follow our [documentation](https://docs.griffin.com/docs/guides/how-to-create-me
 export GRIFFIN_API_KEY="your_api_key"
 export GRIFFIN_KEY_ID="your_key_id"
 export GRIFFIN_PRIVATE_KEY_PATH="path/to/your/private_key.pem"
+export GRIFFIN_WEBHOOK_PATH="<path, e.g. /griffin/webhook>"
 ```
 
 Or, write the values to the `.gitignore`d file `.env`, in the form
@@ -38,6 +39,7 @@ Or, write the values to the `.gitignore`d file `.env`, in the form
 GRIFFIN_API_KEY=<your_api_key>
 GRIFFIN_KEY_ID=<your_key_id>
 GRIFFIN_PRIVATE_KEY_PATH=<path/to/your/private_key.pem>
+GRIFFIN_WEBHOOK_PATH=<path, e.g. /griffin/webhook>
 ```
 
 If you don't set `GRIFFIN_PRIVATE_KEY_PATH`, the code will look for `private_key.pem` in the current directory.

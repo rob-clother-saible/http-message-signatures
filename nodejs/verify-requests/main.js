@@ -3,6 +3,8 @@ import {
 } from 'node:crypto';
 import fetch from 'node-fetch';
 import { v4 } from 'uuid';
+import express from 'express';
+import { https } from 'node:https';
 
 const griffinApiDomain = 'api.griffin.com';
 
@@ -262,14 +264,13 @@ async function verifyIncomingMessage({
   });
 }
 
-
-export async function griffinWebhook(req, res) {
+async function griffinWebhook(req, res) {
   if (
     !(await verifyIncomingMessage({
       method: req.method,
       authority: req.host,
       body: JSON.stringify(req.body),
-      path: '/path/to/griffinWebhook', // Replace this with the path to the Griffin webhook in your system
+      path: process.env.GRIFFIN_WEBHOOK_PATH,
       headers: req.headers,
     }))
   ) {
@@ -286,3 +287,15 @@ export async function griffinWebhook(req, res) {
   console.log('Save the event to internal storage, and use a trigger to handle the event.');
   res.sendStatus(200);
 }
+
+const app = express();
+
+app.use(express.json());
+app.post(process.env.GRIFFIN_WEBHOOK_PATH, griffinWebhook);
+
+// Choose hosting options to set up an appropriate https endpoint
+const options = {
+  key: fs.readFileSync('/path/to/private-key.pem'),
+  cert: fs.readFileSync('/path/to/certificate.pem'),
+};
+https.createServer(options, app).listen(443);
